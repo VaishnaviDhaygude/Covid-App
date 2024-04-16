@@ -1,0 +1,131 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+ 
+    overflow-x: hidden;
+  
+}
+
+h1 {
+  color: black;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  text-align: left;
+  margin-top: 0;
+  font-size: 40px;
+}
+
+h1>b {
+  font-size: 30px;
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.recovered {
+  color: green;
+}
+
+img {
+  width: 85vw;
+  height: 70vh;
+  background-size: cover;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.search h2{
+  margin-left: 50px;
+}
+
+
+.country-form {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+
+.country-input {
+  margin-left: 30px;
+  margin-top: 20px;
+  padding: 8px 15px;
+  border: 2px solid rgb(197, 230, 238);
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.country-input:focus {
+  border-color: red;
+  animation: pulse 1s infinite;
+}
+
+.search {
+  position: relative;
+  left: 30vw;
+  bottom: 40Vh;
+}
+
+
+.submit-btn {
+  padding: 8px 20px;
+  background-color: dimgrey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(34, 32, 32);
+}
+
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 123, 255, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .img {
+    width: 80%;
+    height: 40%;
+    margin-left: 30px;
+
+  }
+
+  .search {
+    position: relative;
+    left: 0px;
+    bottom: 0Vh;
+  }
+   
+  h2{
+      display: none;
+    }
+
+  .add{
+    position: relative;
+    top: 100px;
+
+  }
+}
